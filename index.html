@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="image"></div>
+    <div class="image-container"><div class="placeholder"></div></div>
     <div class="container">
       <div class="header">
         <p>
@@ -19,19 +19,38 @@
         <p>You <em>know</em> you want to.</p>
       </div>
       <div class="inputs">
-        <h2>Let's do this!</h2>
         <form action="#" method="post" id="sign-up-form">
+          <h2>Let's do this!</h2>
           <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" required />
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autocomplete="on"
+            required
+          />
           <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name" required />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            autocomplete="on"
+            required
+          />
           <label for="email">EMAIL</label>
-          <input type="email" name="email" id="email" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="on"
+            required
+          />
           <label for="phone-number">PHONE NUMBER</label>
           <input
             type="text"
             name="phone-number"
             id="phone-number"
+            autocomplete="on"
             maxlength="15"
             minlength="7"
             pattern="^[0-9]*$"

@@ -1,0 +1,125 @@
+/* Start CSS Reset - source: https://www.joshwcomeau.com/css/custom-css-reset/
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.2;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* End CSS Reset */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-container {
+  flex: 1 1 auto;
+  height: auto;
+  width: 90em;
+  height: auto;
+  background-color: green;
+}
+
+.container {
+  flex: 3 1 auto;
+  justify-content: center;
+  margin: 5em 3em 5em 3em;
+  align-items: stretch;
+}
+
+.header {
+  margin: 6em 0 2em 0;
+}
+
+.header p {
+  font-weight: 600;
+  font-size: clamp(0.5rem, 5vw, 1.5rem);
+}
+
+.header p + p {
+  margin: 1.2em 0 1.2em 0;
+}
+
+form {
+  margin: 5em 0 5em 0;
+  padding: 2em 0 2em 0;
+  border: solid 1px black;
+}
