@@ -18,63 +18,81 @@
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <div class="inputs">
-        <form action="#" method="post" id="sign-up-form">
-          <h2>Let's do this!</h2>
-          <label for="first-name">FIRST NAME</label>
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            autocomplete="on"
-            required
-          />
-          <label for="last-name">LAST NAME</label>
-          <input
-            type="text"
-            name="last-name"
-            id="last-name"
-            autocomplete="on"
-            required
-          />
-          <label for="email">EMAIL</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="on"
-            required
-          />
-          <label for="phone-number">PHONE NUMBER</label>
-          <input
-            type="text"
-            name="phone-number"
-            id="phone-number"
-            autocomplete="on"
-            maxlength="15"
-            minlength="7"
-            pattern="^[0-9]*$"
-          />
-          <label for="password">PASSWORD</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            minlength="8"
-            maxlength="64"
-            required
-          />
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-            minlength="8"
-            maxlength="64"
-            required
-          />
-        </form>
-      </div>
+      <form action="#" method="post" id="sign-up-form">
+        <h2>Let's do this!</h2>
+        <div class="inputs">
+          <div class="row-one">
+            <div class="first-name">
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autocomplete="on"
+                required
+              />
+            </div>
+            <div class="second-name">
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autocomplete="on"
+                required
+              />
+            </div>
+          </div>
+          <div class="row-two">
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="on"
+                required
+              />
+            </div>
+            <div class="phone-number">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input
+                type="text"
+                name="phone-number"
+                id="phone-number"
+                autocomplete="on"
+                maxlength="15"
+                minlength="7"
+                pattern="^[0-9]*$"
+              />
+            </div>
+          </div>
+          <div class="row-three">
+            <div class="password">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                maxlength="64"
+                required
+              />
+            </div>
+            <div class="confirm-password">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                minlength="8"
+                maxlength="64"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </form>
       <div class="footer">
         <button type="submit" form="sign-up-form">Create Account</button>
         <p>Already have an account?</p>

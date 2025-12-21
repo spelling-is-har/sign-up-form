@@ -101,12 +101,11 @@ body {
 .container {
   flex: 3 1 auto;
   justify-content: center;
-  margin: 5em 3em 5em 3em;
   align-items: stretch;
 }
 
 .header {
-  margin: 6em 0 2em 0;
+  padding: 4em 6em 2em 6em;
 }
 
 .header p {
@@ -119,7 +118,23 @@ body {
 }
 
 form {
-  margin: 5em 0 5em 0;
-  padding: 2em 0 2em 0;
   border: solid 1px black;
+  width: 100%;
+  padding: 4em 6em 2em 6em;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+}
+
+.first-name,
+.second-name,
+.email,
+.phone-number,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
 }
