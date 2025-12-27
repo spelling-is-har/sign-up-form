@@ -92,20 +92,17 @@ body {
 
 .image-container {
   flex: 1 1 auto;
-  height: auto;
-  width: 90em;
-  height: auto;
+  width: 70vw;
   background-color: green;
 }
 
 .container {
-  flex: 3 1 auto;
+  flex: 1 1 auto;
   justify-content: center;
-  align-items: stretch;
 }
 
 .header {
-  padding: 4em 6em 2em 6em;
+  padding: 10em 6em 2em 6em;
 }
 
 .header p {
@@ -118,14 +115,39 @@ body {
 }
 
 form {
-  border: solid 1px black;
+  box-shadow: 1px 1px 3px #bababa;
   width: 100%;
-  padding: 4em 6em 2em 6em;
+  padding: 1em 6em 2em 6em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0 0 0;
+}
+
+.inputs {
   display: flex;
   flex-direction: column;
 }
 
-.inputs {
+.inputs input {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  height: 2em;
+  width: 14em;
+}
+
+input:focus {
+  border-color: rgb(49, 49, 207);
+  outline: none;
+  box-shadow: 1px 1px 3px #bababa;
+}
+
+.inputs label {
+  font-size: 0.7em;
+}
+
+.row-one,
+.row-two,
+.row-three {
   display: flex;
 }
 
@@ -137,4 +159,5 @@ form {
 .confirm-password {
   display: flex;
   flex-direction: column;
+  margin: 1em 3em 0.5em 0em;
 }
