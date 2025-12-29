@@ -87,6 +87,12 @@ h6 {
 
 /* End CSS Reset */
 
+/*  Declaration of custom properties*/
+
+:root {
+  --logo-color: rgb(238, 51, 38);
+}
+
 html {
   height: 100%;
 }
@@ -122,6 +128,7 @@ body {
   color: rgb(187, 47, 13);
   width: 100%;
   height: 100px;
+  letter-spacing: 2px;
 }
 
 .container {
@@ -130,7 +137,7 @@ body {
 }
 
 .header {
-  padding: 10em 6em 2em 6em;
+  padding: 10em 6em 1.2em 3em;
 }
 
 .header p {
@@ -143,9 +150,9 @@ body {
 }
 
 form {
-  box-shadow: 1px 1px 3px #bababa;
+  box-shadow: 1px 3px 10px 1px #bababade;
   width: 100%;
-  padding: 1em 6em 2em 6em;
+  padding: 1em 6em 2em 3em;
   display: flex;
   flex-direction: column;
   margin: 1em 0 0 0;
@@ -169,6 +176,11 @@ input:focus {
   box-shadow: 1px 1px 3px #bababa;
 }
 
+input:user-invalid {
+  border-color: var(--logo-color);
+  outline: none;
+}
+
 .inputs label {
   font-size: 0.7em;
 }
@@ -188,4 +200,36 @@ input:focus {
   display: flex;
   flex-direction: column;
   margin: 1em 3em 0.5em 0em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 6em 2em 3em;
+}
+
+.footer button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--logo-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #7c7c7c;
+  margin: 1.4em 0 2em 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer button:hover {
+  cursor: pointer;
+}
+
+.footer button:active {
+  background-color: rgb(151, 43, 16);
+}
+
+.footer a {
+  color: var(--logo-colo);
+  text-decoration: none;
 }
